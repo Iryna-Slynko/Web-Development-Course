@@ -1,0 +1,80 @@
+﻿body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000000;
+    background-color: #C0C0C0; /* Page colour */
+}
+
+#Container
+{
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 90%;
+    max-width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 10px;
+}
+
+
+#footer
+{
+    clear: both;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Exercise */
+
+.client{
+float: left;
+        width: 27%; 
+        border-style: dotted; 
+        border-color: red;  
+        padding: 1em;
+        margin: 1%;
+        height: 22em;
+        text-align: left;
+}
+
+.client a{ text-align: left; color:red; font-weight: bold; text-decoration: none;
+
+}
+
+.client a:hover{
+
+}
+
+.client h4{ color: blue;
+    text-align: left;
+
+}
+
+.client img{
+max-width: 75%;
+max-height: 200px;
+}
+
+.clients:after{
+    content: "";
+    clear: both;
+    display: table;
+}

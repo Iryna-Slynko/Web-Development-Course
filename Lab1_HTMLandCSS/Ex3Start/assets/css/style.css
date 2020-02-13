@@ -1,0 +1,91 @@
+body {
+	font-family:Verdana, Arial, sans-serif;
+	background-color: #A66A00;
+	padding: 0 2em;
+}
+
+#container { 
+	background-color: #FFDC73;
+}
+
+#header { 
+	display: block;
+	min-height: 150px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-color: #FFBF00;
+}
+
+#header h1 {
+	color: white;
+	padding: 50px 200px;
+	font-size: 3em;
+}
+
+#nav { 
+
+}
+
+#content {  
+	overflow: auto;
+	background-color: #ffffff;
+	padding: 0em 2em;
+}
+
+.inline-food-image {
+	float: right;
+}
+
+#footer {
+	background-color: #FF9200;
+	text-align: center;
+	padding: 1em;
+}
+
+h2 {
+	 color: #A66A00;
+
+}
+#nav ul {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+#nav li {
+	border-bottom: 1px solid ;color: white;
+  }
+  
+  li:last-child {
+	border-bottom: none;
+  }
+
+  
+  li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+  }
+
+#nav a {
+	display: block;
+	background-color: #A66A00;	
+	text-decoration: none;
+	padding: 8px 16px;
+	color: white;
+	padding: 1em 2em;
+	font-weight: bold;
+}
+
+#nav a:link {
+	background-color: #FFCF40;	
+}
+
+#nav a:visited {
+
+}
+
+#nav a:hover {
+
+}
