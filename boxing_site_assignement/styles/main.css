@@ -1,0 +1,198 @@
+:root {
+  /* https://www.w3schools.com/colors/colors_compound.asp */
+  --background-color: #F0F7D4;
+  --main-txt-color: #092834;
+  --main-focus-color: #DC4C46;
+  --secondary-focus-color: #A5DC47;
+  --accent-color:  #FFF;
+}
+
+html {
+  font-family: Georgia,Times,Times New Roman,serif;
+}
+
+body {
+  color: var(--main-txt-color);
+  background-color: var(--background-color);
+  min-height: 97vh;
+  position: relative;
+}
+
+main {
+  font-size: 1.2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding: 0 1em 5rem 1em;
+  min-height: 70%;
+}
+
+.logo > h1 {
+  float: left;
+}
+
+.schedule {
+  padding: 0 3em;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-container a {
+  flex-grow: 2;
+}
+
+main.info-container>.trainer {
+  flex: 1;
+}
+
+.trainer {
+  clear: both;
+  display: block;
+  padding: 2em;
+  border-style: dotted;
+  border-color: var(--accent-color);
+  margin: 2em;
+}
+
+.trainer h4, .trainer .photo{
+  text-align: center;
+}
+
+.class {
+  clear: both;
+  display: block;
+  padding: 2em;
+}
+
+.info-block {
+  clear: both;
+  display: block;
+  margin: 1em;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: large;
+  align-items: center;
+}
+
+nav>a {
+  clear: both;
+  display: block;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#promotions {
+  color: var(--secondary-focus-color);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  max-width: 100%;
+}
+
+header {
+  background: var(--main-focus-color);
+  display: inline-block;
+  width: 100%;
+}
+
+a {
+  color: var(--main-focus-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-focus-color);
+}
+
+header a {
+  color: var(--accent-color);
+}
+
+header a.active {
+  font-weight: bolder;
+}
+
+/* https://www.w3schools.com/w3css/w3css_buttons.asp */
+.link-button {
+  background-color: var(--background-color);
+  border: 1px solid var(--main-focus-color);
+  color: var(--main-focus-color);
+  outline: 0;
+  float: left;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 2em;
+  max-width: 75%;
+  white-space: normal;
+}
+
+.link-button:hover {
+  background-color:  var(--main-focus-color);
+  color: var(--accent-color);
+}
+
+#promotions a.link-button {
+  background-color: var(--secondary-focus-color);
+  color: var(--accent-color);
+  float: none;
+  left: 50%;
+  max-width: 100%;
+  padding: 1em 10%;
+}
+
+#promotions a.link-button:hover {
+  background-color:  var(--main-focus-color);
+}
+
+@media (min-width: 500px) {
+  .header-image img {
+    max-height: 20%;
+    width: 100%
+  }
+
+  nav>a {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .header-image{
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .logo > h1 {
+    float: none;
+  }
+
+  #promotions a.link-button {
+    float: left;
+  }
+
+  main {
+    padding: 0 0.1em 1rem 0.1em;
+  }
+}
+
+@media all and (max-width: 420px) {
+  #map {
+    display: none;
+  }
+}
