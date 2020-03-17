@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8"/>
+	<style>
+	 .fw { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;}
+	</style>
+	<script>
+		function changeLetter(letter){
+			
+	document.getElementById('letter').innerHTML = letter;
+		}
+		
+		function enableChange(){
+			document.getElementById("cbutton").disabled = false;
+		}
+
+		function disableChange(){
+			document.getElementById("cbutton").disabled = true;
+		}
+
+		function mouseoverTrick(){
+			document.getElementById("magic-element").innerHTML = "<img src='logo.png' />"
+		}
+
+
+	</script>
+    </head>
+    <body>
+	<!---------------------------------------------------------------------------------------------------->
+	<h1>Exercise 1</h1>
+	<p>The following html elements are defined: a paragraph with a single letter, A, and three buttons: "Change to A", "Change to B" and "Change to C".</p>
+	<p>Your task is to add Javascript handlers to the three buttons so that each, when clicked, does what its name says i.e. the button "Change to A" changes the letter to 'A' etc. Include all the code in the event handler property value in HTML.</p>
+	<p>Test your solution.</p> 
+	   
+	<p id="letter">O</p>
+	
+	<button type="button" onclick ="changeLetter('A')" >Change to A</button>
+	<button type="button"onclick ="changeLetter('B')" >Change to B</button>
+	<button id="cbutton" type="button" onclick ="changeLetter('C')">Change to C</button>
+	<hr/>
+
+	<!---------------------------------------------------------------------------------------------------->
+	<h1>Exercise 2</h1>
+	<p>Two buttons, called <strong>Disable 'Change to C'</strong> and <strong>Enable 'Change to C'</strong>, are defined just below these instructions.</p>
+	<p>Your task is to define two functions, one that disables the 'Change to C' button and another that enables it. Define the functions internally, i.e. in the <span class="fw">script</span> element inside this file's <span class="fw">head</span> element. Add the functions as event handlers to the buttons below.</p>
+	<p>Test your solution.</p>
+	<button type="button" onclick="disableChange()">Disable 'Change to C'</button>
+	<button type="button" onclick="enableChange()">Enable 'Change to C'</button>
+	<hr/>
+	
+	<!---------------------------------------------------------------------------------------------------->
+	<h1>Exercise 3</h1>
+	<p>An element with id "magic-element" and containing text "Magic text" is defined.</p>
+	<p>Your task is to write a function that changes the content of this element to the image "logo.png", supplied for the exercise. Define the function internally in this HTML file, then add it as the handler for the <span class="fw">mouseover</span> event on the element itself.</p>
+	<p>Test your solution.</p> 
+	<p id="magic-element" onmouseover="mouseoverTrick()" > Magic text</p>
+	<hr/>
+    </body>
+</html>
+

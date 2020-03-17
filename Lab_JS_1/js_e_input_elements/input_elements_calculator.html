@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Input Elements Exercises</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+	
+	
+
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Input Elements Exercises</h1>
+
+	    <p>HTML <strong>input</strong> elements are primarily used in HTML <strong>forms</strong>. Form data is submitted to the server for processing. In the sample form below a <strong>php</strong> script on a server processes the submitted data.</p>
+
+	    <figure>
+		<figcaption>Example of HTML form code and appearance (try out the form!)</figcaption>
+		<pre class="code-listing">
+&lt;form action="https://303bha.duckdns.org/tudt/cswd-pt-1239404852/res/scripts/process_example_form.php" method="post">
+   First name: &lt;input type="text" name="firstname">&lt;br/>
+   Middle name: &lt;input type="text" name="middlename">&lt;br/>
+   Surname: &lt;input type="text" name="surname">&lt;br/>
+   &lt;input type="submit" value="Submit">
+&lt;/form></pre>
+
+	    	<form action="https://303bha.duckdns.org/tudt/cswd-pt-1239404852/res/scripts/process_example_form.php" method="post">
+		    First name: <input type="text" name="firstname"><br/>
+		    Middle name: <input type="text" name="middlename"><br/>
+		    Surname: <input type="text" name="surname"><br/>
+		    <input type="submit" value="Submit">
+		</form>
+	    </figure>
+	    
+	    <hr>
+
+	    <p>Input elements are also a general mechanism for collecting input from users. This input can be accessed by Javascript for client-side processing.</p>
+
+	    <p>HTML5 defines a large number of input types, listed <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">here</a>. Creating an input element of a particular type harnesses the HTML5 interpreter's capability for input validation.</p>
+
+
+	    
+
+	    <!----------------------------------------- EXERCISE EX01 ----------------------------------------->
+	    <section id="EX01" class="exercise">
+		<p>Exercise: Input elements [EX01]</p>
+		<p>Add a few (at least 3, including button, date and color) input elements of different types and try them out to see how the HTML interpreter handles your input.</p>
+
+		<p>Type in an email: <input type="email"></p>
+		<p>Enter your phone number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+		<small>Format: 123-456-7890</small>
+
+
+		<p>Pick a date: <input type="date"></p>
+		<p>Pick a colour: <input type="color"></p>
+
+		<input class="favorite styled" type="button" value="Add to favorites">
+
+		<p>Choose how you prefer to be contacted:</p>
+
+		<div>
+			<input type="checkbox" id="by-email" name="by-email" checked>
+  			<label for="by-email">Email</label>
+		</div>
+
+		<div>
+  			<input type="checkbox" id="by-mobile" name="by-mobile">
+  			<label for="by-mobile">Mobile phone</label>
+		</div>
+
+		<p>Find more input types <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">here</a>.</p>
+	    </section>
+	    <!------------------------------------- END EXERCISE EX01 ----------------------------------------->
+	    
+	    <!----------------------------------------- EXERCISE EX02 ----------------------------------------->
+	    <section id="EX02" class="exercise">
+		<p>Exercise: Calculator [EX02]</p>
+		<p>The following html elements are defined:
+		    <ul>
+			<li>two input fields</li>
+			<li>four buttons: "Add", "Subtract", "Multiply" and "Divide"</li>
+			<li>an empty span element with id <span class="fw">answer</span></li>
+		    </ul>
+		</p>
+		<p>Your task is to write Javascript code that implements a calculator. When any of the buttons is clicked, the requested operation should be performed on the numbers in the two input fields. The result should be displayed in the element with id <span class="fw">answer</span>.</p>
+		<p>Place your code in the file <span class="fw">ex.js</span> and create a <span class="fw">script</span> element to include <span class="fw">ex.js</span> in this HTML file. </p>
+		<p>Tips:
+		    <ul>
+			<li>The value entered by the user into an input field is stored in the element object property <span class="fw">value</span> (not <span class="fw">innerHTML</span>).</li>
+			<li>After reading the value from the input element, pass it into the function <span class="fw">parseInt()</span> to convert it from string type to number type, otherwise you might get some surprising results after using the arithmetic operators.</li>
+			<li>In order to access the button and input elements, you can use the <span class="fw">document.getElementById()</span> method, for which you will have to define some ids on the elements.</li>
+		    </ul>
+		</p>
+
+		<script src="ex.js"></script>
+
+	
+
+		<section id="ex1">
+		    <p><input id="num1" type="number"><input id="num2" type="number"></p>
+		    <p>
+			<button type="button" onclick="add();">Add</button>
+			<button type="button" onclick="subtract();">Subtract</button>
+			<button type="button" onclick="multiply();">Multiply</button>
+			<button type="button" onclick="divide();">Divide</button>
+		    </p>
+		    Answer: <span id="answer"></span>
+		</section>
+	    </section>
+	</div>
+    </body>
+</html>
