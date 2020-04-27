@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Where is the spider?</title>
+
+	<style>
+	 body { padding:2em; }
+	 img { max-height: 100%; max-width:100%; }
+	 #box0, #box1, #box2 { width:12em; height:8em; border: 1px solid black; margin-right: 2em; float: left; text-align: center; line-height: 8em}
+	 // #msg { color:lightgrey; }
+	</style>
+    </head>
+
+    <body>
+        <h1>Guess where the picture is hiding</h1>
+	<div id="box0" onclick="handleGuess(0);"></div>
+	<div id="box1" onclick="handleGuess(1);"></div>
+	<div id="box2" onclick="handleGuess(2);"></div>
+	<button onclick="startGame();">Start</button>
+    <p id="msg"></p>
+
+
+    <script src="gamescript.js"></script>
+
+
+</body>
+</html>
